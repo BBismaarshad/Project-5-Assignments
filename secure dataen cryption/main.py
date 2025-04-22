@@ -5,7 +5,6 @@ from cryptography.fernet import Fernet
 # Generate a key (this should be stored securely in production)
 KEY = Fernet.generate_key()
 cipher = Fernet(KEY)
-
 # In-memory data storage
 stored_data = {}  # {"user1_data": {"encrypted_text": "xyz", "passkey": "hashed"}}
 failed_attempts = 0
